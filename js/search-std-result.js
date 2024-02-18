@@ -28,47 +28,44 @@ searchFormElm.addEventListener('submit', e=>{
     const {rollVal, regVal, sessVal} = gettingValue(stdRollElm, stdRegElm, stdSessElm)
 
     getDocs(studentColRef).then(snapshot=>{
-        snapshot.docs.find(elm =>{
+        snapshot.docs.map(elm =>{
             let info = elm.data()
-            if(info.studentRoll !== rollVal && info.studentReg !== regVal && info.studentSessoin !== sessVal){
+            if(Number(info.studentRoll) === Number(rollVal) && Number(info.studentReg) === Number(regVal) && info.studentSessoin === sessVal){
                 stdResOutputElm.innerHTML = `
-                    <h3 style="color: red">Student Result Not Found</h3>
-                `
-            }else{
-                stdResOutputElm.innerHTML = `
-                <div class="res">
-                 <h3>Student Result</h3>
-                    <table>
-                        <tr>
-                            <th>Name:</th>
-                            <td>${info.studentName}</td>
-                        </tr>
-                        <tr>
-                            <th>Roll:</th>
-                            <td>${info.studentRoll}</td>
-                        </tr>
-                        <tr>
-                            <th>Registration:</th>
-                            <td>${info.studentReg}</td>
-                        </tr>
-                        <tr>
-                            <th>Session:</th>
-                            <td>${info.studentSessoin}</td>
-                        </tr>
-                    </table>
-                </div>
-                `
-                info.results.map(elm =>{
+<div class="res">
+ <h3>Student Result</h3>
+    <table>
+        <tr>
+            <th>Name:</th>
+            <td>${info.studentName}</td>
+        </tr>
+        <tr>
+            <th>Roll:</th>
+            <td>${info.studentRoll}</td>
+        </tr>
+        <tr>
+            <th>Registration:</th>
+            <td>${info.studentReg}</td>
+        </tr>
+        <tr>
+            <th>Session:</th>
+            <td>${info.studentSessoin}</td>
+        </tr>
+    </table>
+</div>
+`
+                console.log();
+                info.results && info.results.map((e)=>{
                     document.querySelector('.std-res table').insertAdjacentHTML('beforeend', `
-                    <tr>
-                    <th>Semester:</th>
-                    <td>${elm.semester}</td>
-                </tr>
-                <tr>
-                    <th>Result:</th>
-                    <td>${elm.result}</td>
-                </tr>
-                    `)
+                                <tr>
+                                <th>Semester:</th>
+                                <td>${e.semester}</td>
+                            </tr>
+                            <tr>
+                                <th>Result:</th>
+                                <td>${e.result}</td>
+                            </tr>
+                                `)
                 })
 
             }
@@ -78,3 +75,45 @@ searchFormElm.addEventListener('submit', e=>{
         console.log(err);
     })
 })
+
+// stdResOutputElm.innerHTML = `
+// <h3 style="color: red">Student Result Not Found</h3>
+// `
+
+// info.results.map(e =>{
+//     document.querySelector('.std-res table').insertAdjacentHTML('beforeend', `
+//     <tr>
+//     <th>Semester:</th>
+//     <td>${e.semester}</td>
+// </tr>
+// <tr>
+//     <th>Result:</th>
+//     <td>${e.result}</td>
+// </tr>
+//     `)
+// })
+
+// console.log(elm.data());
+// stdResOutputElm.innerHTML = `
+// <div class="res">
+//  <h3>Student Result</h3>
+//     <table>
+//         <tr>
+//             <th>Name:</th>
+//             <td>${info.studentName}</td>
+//         </tr>
+//         <tr>
+//             <th>Roll:</th>
+//             <td>${info.studentRoll}</td>
+//         </tr>
+//         <tr>
+//             <th>Registration:</th>
+//             <td>${info.studentReg}</td>
+//         </tr>
+//         <tr>
+//             <th>Session:</th>
+//             <td>${info.studentSessoin}</td>
+//         </tr>
+//     </table>
+// </div>
+// `

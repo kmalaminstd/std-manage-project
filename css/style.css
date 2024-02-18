@@ -328,6 +328,10 @@
     cursor: pointer;
 }
 
+.std-res{
+    background-color: #fff;
+}
+
 .std-res-upd{
     width: 400px;
     background-color: #fff;
