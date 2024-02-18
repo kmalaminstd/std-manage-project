@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(229, 236, 241);">
+   
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./teachers.html">Teachers Database</a></li>
+            <li><a href="./all-students.html">Students Database</a></li>
+            <li><a href="./search-std-result.html">Student Result</a></li>
+            <li><a href="./manage-teacher.html">Manage Teacher</a></li>
+            <li><a href="./manage-std.html">Manage Student</a></li>
+            <li><a href="./admin.html">Login</a></li>
+        </ul>
+    </nav>
+    <div class="std-res-upd">
+        <div class="close-icon">
+            <img src="./images/close.png" alt="">
+        </div>
+        <form>
+
+            <div class="headInfo">
+
+            </div>
+
+            <select id="std-semester">
+                <option value="">Choose semester</option>
+                <option value="1st">1st Semester</option>
+                <option value="2nd">2nd Semester</option>
+                <option value="3rd">3rd Semester</option>
+                <option value="4th">4rh Semester</option>
+                <option value="5th">5th Semester</option>
+                <option value="6th">6th Semester</option>
+                <option value="7th">7th Semester</option>
+                <option value="8th">8th Semester</option>
+            </select>
+
+            <label for="">Result :</label>
+            <input type="number" step="any" max="4" min="1" id="std-gpa" placeholder="gpa out of 4">
+
+            <button>Submit</button>
+        </form>
+    </div>
+
+    <div class="clearify"></div>
+
+    <div class="student-page-header">
+        <h2>All Students</h2> 
+    </div>
+
+    <div class="filter-option">
+        <form>
+
+            <select id="dept-fil">
+                <option value="">Choose Department</option>
+                <option value="computer">Computer</option>
+                <option value="mechanial">Mechanial</option>
+                <option value="electrical">Electrical</option>
+                <option value="electronics">Electronics</option>
+                <option value="civil">Civil</option>
+                <option value="construction">Construction</option>
+                <option value="telecommunication">Telecommunication</option>
+            </select>
+    
+            <select id="shift-fil">
+                <option value="">Choose Shift</option>
+                <option value="firstShift">First Shift</option>
+                <option value="secondShift">Second Shift</option>
+            </select>
+    
+            <select id="sess-fil">
+                <option value="">Choose Session</option>
+                <option value="2017-18">2017-18</option>
+                <option value="2018-19">2018-19</option>
+                <option value="2019-20">2019-20</option>
+                <option value="2020-21">2020-21</option>
+                <option value="2021-22">2021-22</option>
+                <option value="2022-23">2022-23</option>
+                <option value="2023-24">2023-24</option>
+                <option value="2024-25">2024-25</option>
+            </select>
+            <br/>
+            <br/>
+            <button class="std-filter-btn">Filter</button>
+        </form>
+
+    </div>
+
+    <div class="student-list-table">
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>SL.</th>
+                    <th>Student Name</th>
+                    <th>Department</th>
+                    <th>Shift</th>
+                    <th>Roll Number</th>
+                    <th>Registration Number</th>
+                    <th>Session</th>
+                    <th>District</th>
+                    <th>Action</th>
+                </tr>
+                <tbody>
+                    
+                </tbody>
+            </thead>
+        </table>
+    </div>
+
+    
+
+
+
+ 
+
+    <script src="./js/all-students.js"></script>
+    <script src="./js/commom.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(229, 236, 241);">
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./teachers.html">Teachers Database</a></li>
+            <li><a href="./all-students.html">Students Database</a></li>
+            <li><a href="./search-std-result.html">Student Result</a></li>
+            <li><a href="./manage-teacher.html">Manage Teacher</a></li>
+            <li><a href="./manage-std.html">Manage Student</a></li>
+            <li><a href="./admin.html">Login</a></li>
+        </ul>
+    </nav>
+    <div class="srch-std-res">
+        <form>
+            <label for="rollNo">Roll No:</label>
+            <input type="text" id="rollNo" name="rollNo" required>
+    
+            <label for="regNo">Registration No:</label>
+            <input type="text" id="regNo" name="regNo" required>
+    
+            <label for="session">Session:</label>
+            <select id="session" name="session" required>
+                <option value="">Choose Session</option>
+                <option value="2017-18">2017-18</option>
+                <option value="2018-19">2018-19</option>
+                <option value="2019-20">2019-20</option>
+                <option value="2020-21">2020-21</option>
+                <option value="2021-22">2021-22</option>
+                <option value="2022-23">2022-23</option>
+                <option value="2023-24">2023-24</option>
+                <option value="2024-25">2024-25</option>
+            </select>
+    
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="std-res">
+        <!-- <div class="res">
+            <h3>Student Result</h3>
+            <table>
+                <tr>
+                    <th>Name:</th>
+                    <td>John Doe</td>
+                </tr>
+                <tr>
+                    <th>Roll:</th>
+                    <td>01235785</td>
+                </tr>
+                <tr>
+                    <th>Registration:</th>
+                    <td>01235785</td>
+                </tr>
+                <tr>
+                    <th>Session:</th>
+                    <td>2021-22</td>
+                </tr>
+                <tr>
+                    <th>Semester:</th>
+                    <td>3rd</td>
+                </tr>
+                <tr>
+                    <th>Result:</th>
+                    <td>GPA: 4</td>
+                </tr>
+            </table>
+        </div> -->
+    </div>
+
+
+    <script src="./js/search-std-result.js"></script>
+    
+</body>
+</html>

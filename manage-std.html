@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(229, 236, 241);">
+
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./teachers.html">Teachers Database</a></li>
+            <li><a href="./all-students.html">Students Database</a></li>
+            <li><a href="./search-std-result.html">Student Result</a></li>
+            <li><a href="./manage-teacher.html">Manage Teacher</a></li>
+            <li><a href="./manage-std.html">Manage Student</a></li>
+            <li><a href="./admin.html">Login</a></li>
+        </ul>
+    </nav>
+    <div class="manage-std">
+
+        
+
+        <form>
+            
+            <h3>Add Student</h3>
+
+            <label for="studentName">Student's Name:</label>
+            <input type="text" id="studentName" name="studentName" >
+    
+            <label for="department">Technology:</label>
+            <select name="" id="department">
+                <option value="">Choose Technology</option>
+                <option value="computer">Computer Technology</option>
+                <option value="electrical">Electrical Technology</option>
+                <option value="electronics">Electronics Technology</option>
+                <option value="mechanical">Mechanical Technology</option>
+                <option value="construction">Constrution Technology</option>
+                <option value="civil">Civil Technology</option>
+                <option value="telecom">Telecommunication Technology</option>
+            </select>
+    
+            <label for="shift">Shift:</label>
+            <select name="" id="shift">
+                <option value="">Choose Shift</option>
+                <option value="firstShift">First Shift</option>
+                <option value="secondShift">Second Shift</option>
+            </select>
+    
+            <label for="rollNo">Roll No:</label>
+            <input type="number" id="rollNo" name="rollNo" >
+    
+            <label for="regNo">Registration No:</label>
+            <input type="number" id="regNo" name="regNo" >
+    
+            <label for="session">Session:</label>
+            <select id="session" name="session" >
+                <option value="">Choose Session</option>
+                <option value="2017-18">2017-18</option>
+                <option value="2018-19">2018-19</option>
+                <option value="2019-20">2019-20</option>
+                <option value="2020-21">2020-21</option>
+                <option value="2021-22">2021-22</option>
+                <option value="2022-23">2022-23</option>
+                <option value="2023-24">2023-24</option>
+                <option value="2024-25">2024-25</option>
+            </select>
+    
+            <label for="district">District:</label>
+            <input type="text" id="district" name="district" >
+    
+            <button type="submit">Add Student</button>
+        </form>
+    </div>
+    
+
+    <script src="./js/manage-std.js"></script>
+    <script src="./js/commom.js"></script>
+</body>
+</html>

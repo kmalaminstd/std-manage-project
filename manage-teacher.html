@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(229, 236, 241);">
+
+    <nav>
+        <ul> 
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./teachers.html">Teachers Database</a></li>
+            <li><a href="./all-students.html">Students Database</a></li>
+            <li><a href="./search-std-result.html">Student Result</a></li>
+            <li><a href="./manage-teacher.html">Manage Teacher</a></li>
+            <li><a href="./manage-std.html">Manage Student</a></li>
+            <li><a href="./admin.html">Login</a></li>
+        </ul>
+    </nav>
+    <div class="add-teacher-form">
+        <form>
+             <h3>Add Teacher</h3>
+            <label for="teacherName">Teacher's Name:</label>
+            <input type="text" id="teacherName" name="teacherName" >
+    
+            <label for="teacherPost">Teacher's Post:</label>
+            <select id="teacherPost" name="teacherPost" >
+                <option value="" selected disabled>Select Post</option>
+                <option value="chiefInstructor">Chief Instructor</option>
+                <option value="seniorInstructor">Senior Instructor</option>
+                <option value="juniorInstructor">Junior Instructor</option>
+                <option value="lecturer">Lecturer</option>
+            </select>
+    
+            <label for="contactNo">Contact No:</label>
+            <input type="number" id="contactNo" name="contactNo" >
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" >
+
+            <label for="technology">Technology:</label>
+            <select name="" id="technology">
+                <option value="" selected disabled>Choose Technology</option>
+                <option value="computer">Compouter Technology</option>
+                <option value="civil">Civil Technology</option>
+                <option value="construction">Construction Technology</option>
+                <option value="mechanical">Mechanical Technology</option>
+                <option value="electrical">Electrical Technology</option>
+                <option value="electronics">Electronics Technology</option>
+                <option value="telecommunication">Telecommunication Technology</option>
+            </select>
+    
+            <label for="image">Image:</label>
+            <input type="file" id="image" name="image" accept="image/*">
+    
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+    <div class="manage-teacher-list">
+
+        <header>
+            <h2>Teacher's Short List</h2>
+        </header>
+
+        <table>
+            <tr>
+                <th>SL.</th>
+                <th>Teacher Name</th>
+                <th>Post</th>
+                <th>Contact No.</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+            <!-- <tr>
+                <td>1.</td>
+                <td>John Doe</td>
+                <td>Instructor</td>
+                <td>1st</td>
+                <td>12345</td>
+                <td>demo@email.com</td>
+                <td><button class="roll reg">Delete</button> <button>Update</button></td>
+                
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>John Doe</td>
+                <td>Instructor</td>
+                <td>1st</td>
+                <td>12345</td>
+                <td>demo@email.com</td>
+                <td><button class="roll reg">Delete</button> <button>Update</button></td>
+            </tr> -->
+            <!-- Add more rows as needed -->
+        </table>
+    </div>
+
+
+    <script src="./js/manage-teacher.js"></script>
+    <script src="./js/commom.js"></script>
+</body>
+</html>

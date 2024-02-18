@@ -1,0 +1,615 @@
+
+/* index page css */
+
+.main{
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/bgimg.png'); */
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main .main-header h1{
+    text-align: center;
+    padding: 20px 0;
+    color: rgb(29, 204, 108);
+}
+
+.main .options{
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.main .options .box{
+    background-color: rgba(240, 128, 128, 0.658);
+    height: 200px;
+    width: 24%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    margin-top: 18px;
+    
+}
+
+.main .options .box a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 28px;
+    display: block;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.main .options .box:hover{
+   box-shadow: 0px 0px 6px 2px white;
+   transition: 0.2s ease-in-out;
+   -webkit-transition: 0.2s ease-in-out;
+   -moz-transition: 0.2s ease-in-out;
+   -ms-transition: 0.2s ease-in-out;
+   -o-transition: 0.2s ease-in-out;
+   cursor: pointer;
+}
+
+.main .options .box h3{
+    color: #fff;
+    font-size: 28px;
+}
+
+
+
+
+/* index page css */
+
+/* // ============= */
+
+
+/* admin login page css */
+
+.sign-out-btn{
+    cursor: pointer;
+}
+
+#eye-icon{
+    width: 20px;
+    width: 20px;
+}
+
+.admin-login-area form h3{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.admin-login-area form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 500px;
+    padding: 0 40px;
+}
+
+.admin-login-area table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.admin-login-area th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.admin-login-area table th{
+    background-color: #4CAF50;
+    color: white;
+}
+
+.admin-login-area table input{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.admin-login-area .password-container {
+    position: relative;
+}
+
+.admin-login-area .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.admin-login-area button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.admin-login-area button:hover {
+    background-color: #45a049;
+}
+
+/* admin login page css */
+
+/* teachers page css */
+
+.teacher-page-header{
+    background-color: #fff;
+    margin: 40px auto;
+    width: fit-content;
+    padding: 8px 35px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.all-teachers{
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    /* gap: 10px; */
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.all-teachers .info-box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    max-width: 600px;
+    margin: 20px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.all-teachers .image-container {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.all-teachers .person-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.all-teachers .info-container {
+    flex: 2;
+    padding: 20px;
+}
+
+.all-teachers h2, p {
+    margin: 0 0 10px 0;
+    border-bottom: 0.5px solid lightgray;
+}
+
+.all-teachers img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px 0 0 8px;
+}
+
+/* teachers page css */
+
+/* // ========== */
+
+/* students page css */
+
+.student-page-header{
+    background-color: #fff;
+    margin: 40px auto;
+    width: fit-content;
+    padding: 8px 35px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.student-list-table, .manage-teacher-list{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.student-list-table table, .manage-teacher-list table {
+    background-color: #fff;
+    border-collapse: collapse;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    margin: 20px;
+}
+
+.student-list-table table button, .manage-teacher-list table button{
+    cursor: pointer;
+}
+
+.student-list-table , td, .manage-teacher-list {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.student-list-table th, .manage-teacher-list th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 3px;
+}
+
+.student-list-table tr:hover, .manage-teacher-list tr:hover {
+    background-color: #f5f5f5;
+}
+
+.filter-option{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.filter-option select{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    padding: 5px 10px;
+    outline: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+}
+
+.std-res-upd{
+    width: 400px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    display: none;
+    
+}
+
+.std-filter-btn{
+    background-color: lightblue;
+    border: 1px solid lightcoral;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+    padding: 8px 20px;
+}
+
+.std-res-upd form{
+    width: 100%;
+}
+
+.std-res-upd form h3{
+    margin: 20px 0;
+}
+
+.std-res-upd form select, .std-res-upd form input{
+    width: 100%;
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 18px;
+    padding: 5px 15px;
+}
+
+.std-res-upd form button{
+    background-color: #45a049;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 5px 15px;
+}
+
+.std-res-upd .close-icon{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.std-res-upd .close-icon img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* students page css */
+
+/* manage teacher page css */
+
+.manage-teacher-list header{
+    width: fit-content;
+    margin: 20px auto;
+}
+
+.manage-teacher-list header h2{
+    background-color: #fff;
+    padding: 8px 18px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.add-teacher-form{
+    background-color: #fff;
+    width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.add-teacher-form form h3{
+    text-align: center;
+    font-size: 25px;
+}
+
+.add-teacher-form form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.add-teacher-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.add-teacher-form input,
+.add-teacher-form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.add-teacher-form form option{
+    font-size: 18px;
+
+}
+
+.add-teacher-form button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-teacher-form button:hover {
+    background-color: #45a049;
+}
+
+.add-teacher-form img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* manage teacher page css */
+
+/* // ================== */
+
+/* search student result page css */
+
+.srch-std-res{
+    background-color: #fff;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin: 40px auto;
+}
+
+.srch-std-res form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.srch-std-res form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.srch-std-res form input,
+.srch-std-res form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.srch-std-res form button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.srch-std-res form button:hover {
+    background-color: #45a049;
+}
+
+.std-res{
+    width: 500px;
+    margin: 40px auto;
+}
+
+.std-res .res{
+    background-color: #fff;
+    padding: 20px;
+}
+
+.res table tr th, .res table tr td{
+    border-bottom: 0.5s solid lightgray;
+}
+
+.res table tr th{
+    text-align: left;
+
+}
+
+.res h3{
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* search student result page css */
+
+/* // ================= */
+
+/* manage student page css */
+
+.manage-std{
+    background-color: #fff;
+    width: 500px;
+    margin: 40px auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.manage-std form {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.manage-std form select{
+    font-size: 15px;
+}
+
+.manage-std h3{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.manage-std label {
+    display: block;
+    margin-top: 10px;
+}
+
+.manage-std input,
+.manage-std select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.manage-std button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.manage-std button:hover {
+    background-color: #45a049;
+}
+
+/* manage student page css */
+/*nav start*/
+nav{
+    background-color: #ffffff;
+    width: 80%;
+    margin: 20px auto;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    transform: 0.5s;
+    -webkit-transform: 0.5s;
+    -moz-transform: 0.5s;
+    -ms-transform: 0.5s;
+    -o-transform: 0.5s;
+    font-size: 18px;
+}
+nav ul li a:hover{
+    color: lightcoral;
+}
+/*nav end*/

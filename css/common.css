@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clearify{
+    clear: both;
+    display: table;
+}
+
+.memDiv, .homeButton{
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.memDiv a, .homeButton a{
+    display: block;
+    background-color: blanchedalmond;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.memHeader{
+    background-color: #fff;
+    width: 80%;
+    text-align: center;
+    margin: 25px auto;
+    padding: 10px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.memHeader h2{
+    margin-bottom: 10px;
+}
+
+.memTable{
+    width: 580px;
+    margin: 40px auto;
+}
+
+.memTable table {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.memTable table tr th, .memTable table tr td {
+    border: 0.5px solid lightgray;
+    padding: 8px 10px;
+}
+
+.memTable table thead tr{
+    background-color: lightgreen;
+}
+
+.memTable table tbody tr:nth-child(even){
+    background-color: rgba(211, 211, 211, 0.5);
+}
+
+.memTable table tbody tr:hover{
+    background-color: rgba(211, 211, 211, 0.5);
+}
