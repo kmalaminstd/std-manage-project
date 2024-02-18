@@ -234,6 +234,31 @@
 
 /* students page css */
 
+.std-details-box{
+    background-color: #fff;
+    box-shadow: 0px 5px 3px 3px #fff;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 80%;
+    margin: 40px auto;
+    display: none;
+    position: absolute;
+}       
+
+.std-details-box h4{
+    margin: 8px 0;
+}
+
+.std-details-box h4 span{
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+
 .student-page-header{
     background-color: #fff;
     margin: 40px auto;

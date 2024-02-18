@@ -170,7 +170,9 @@ filterFormElm.addEventListener('submit', e=>{
                         <td>${info.studentReg}</td>
                         <td>${info.studentSessoin}</td>
                         <td>${info.setudentDistrict}</td>
-                        <td><button class="${elm.id} updt-res"> Update Result</button> <button class="${elm.id} delt-std">Delete</button></td>
+                        <td><button class="${elm.id} updt-res"> Update Result</button> <button class="${elm.id} delt-std">Delete</button>
+                        <button class="${elm.id} std-details-btn">Details</button>
+                        </td>
                    </tr>
                    `
                    )
@@ -182,5 +184,57 @@ filterFormElm.addEventListener('submit', e=>{
         })
     }else{
         alert("Something went wrong!!!")
+    }
+})
+
+document.addEventListener("click", (e)=>{
+    if(e.target.matches(".std-details-btn")){
+        const id = getUniqueId(e.target.classList)
+
+
+        document.querySelector(".std-details-box").style.display = "block"
+
+        
+
+        getDocs(studentColRef).then(snapshot=>{
+            snapshot.docs.map(elm =>{
+                if(elm.id === id){
+                    let inf = elm.data()
+                    document.querySelector('.std-details-box .infos').innerHTML = `
+                        <h4>Name: <span>${inf.studentName}</span> </h4>
+                        <h4>Roll: <span>${inf.studentRoll}</span></h4>
+                        <h4>Registration: <span>${inf.studentReg}</span></h4>
+                        <h4>Technology: <span>${inf.studentDept}</span></h4>
+                        <h4>Shift: <span>${inf.studentShift}</span></h4>
+                        <h4>Session: <span>${inf.studentSessoin}</span></h4>
+                        <h4>Destrict: <span>${inf.setudentDistrict}</span></h4>
+                    `
+
+                    inf.results.map(res =>{
+                        console.log(res);
+                        document.querySelector('.std-details-box .results').insertAdjacentHTML("beforeend", 
+                        `
+                        <center>
+                         <h3>Students Results</h3>
+                        </center>
+                        
+                        <h3> ${res.semester} semester: <span>${res.result}</span> </h3>
+                    `
+                        )
+
+
+                    })
+                }
+            })
+        }).catch((err)=>{
+            console.log(err);
+        })
+        
+    }
+})
+
+document.addEventListener("click", (e)=>{
+    if(e.target.matches(".std-details-box-close")){
+        document.querySelector(".std-details-box").style.display = "none"
     }
 })
